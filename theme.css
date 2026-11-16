@@ -1,0 +1,34 @@
+/* Shared theme controls and dark palette. Artwork keeps its original colours. */
+:root{color-scheme:light}
+.theme-toggle{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;padding:10px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink)}
+.theme-toggle:hover{border-color:var(--muted)}
+.theme-toggle svg{width:21px;height:21px}
+.theme-sun{display:none}
+.header .desktop-nav{margin-left:auto}
+@media(max-width:1000px) and (min-width:761px){.header{gap:14px}.header .desktop-nav{gap:17px}.header .nav-cta{padding:9px 15px}}
+@media(max-width:760px){.header{gap:8px}.header>.theme-toggle{margin-left:auto}.header>.wordmark{font-size:clamp(17px,5vw,21px)}}
+html[data-theme="dark"]{color-scheme:dark;--paper:#121315;--ink:#f3f3ee;--white:#1c1e21;--soft:#202226;--line:#383b40;--muted:#b5b7bd;--dark:#17191c;--accent:#dbea9b}
+html[data-theme="dark"] .theme-moon{display:none}
+html[data-theme="dark"] .theme-sun{display:block}
+html[data-theme="dark"] body,html[data-theme="dark"] .ui-shots{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] .header,html[data-theme="dark"] .dialog-bar{background:#121315f2;color:var(--ink)}
+html[data-theme="dark"] :is(.desktop-nav a,.hello-line,.playful-hero .roles,.playful-hero .hero-description,.playful-hero h1>span,.playground-hint,.shots-title p,.about-title>p,.bento-eyebrow,.resume-heading>p,.resume-meta,.journey-copy p,.journey-milestones span,.project-meta,.project-info>p,.accordion-panel p,.accordion-panel .service-tags,.service-num,.accordion-state,.modal-case-copy p){color:var(--muted)}
+html[data-theme="dark"] .desktop-nav a[aria-current],html[data-theme="dark"] .desktop-nav a:hover,html[data-theme="dark"] .journey-milestones strong{color:var(--ink)}
+html[data-theme="dark"] :is(.project-card,.project-card:nth-child(3n+2),.project-card:nth-child(3n+3),.accordion,.accordion:nth-child(2),.accordion:nth-child(3),.process-grid article,.process-grid article:nth-child(n),.resume-card,.kenny-journey,.bento-story,.page-menu nav){background:#1d2024;color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] :is(#services,.hero-pill,.back-top,.hero-shot){background:#191b1e;color:var(--ink)}
+html[data-theme="dark"] :is(.bento-focus,.bento-cta,.resume-vengreso,.resume-soft){background:#283223;color:var(--ink)}
+html[data-theme="dark"] :is(.bento-stats,.resume-stacpay){background:#302a3c;color:var(--ink)}
+html[data-theme="dark"] :is(.bento-note,.resume-flip){background:#3a2d26;color:var(--ink)}
+html[data-theme="dark"] :is(.bento-story>p:last-child,.bento-stats span,.resume-card>p,.resume-card ul,.resume-vengreso>p,.resume-vengreso ul,.resume-stacpay>p,.resume-stacpay ul){color:#c2c4c9}
+html[data-theme="dark"] :is(.bento-focus span,.resume-capabilities span,.project-arrow,.process-grid article>span,.shot-control){background:#292d32;color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] :is(.primary,.nav-cta,.contact-bottom .button,.bento-cta .button,.shots-more){background:var(--accent);color:#182014;border-color:var(--accent)}
+html[data-theme="dark"] :is(.primary:hover,.nav-cta:hover,.bento-cta .button:hover,.contact-bottom .button:hover){background:#edf8b8;color:#182014}
+html[data-theme="dark"] #contact{background:#293322;color:var(--ink)}
+html[data-theme="dark"] #contact .section-label,html[data-theme="dark"] .contact-bottom p{color:#c0cbb1}
+html[data-theme="dark"] :is(.page-menu nav a:hover,.page-menu nav a[aria-current],.case-study-contents button:hover,.resume-links a:hover){background:#343e29;color:var(--ink)}
+html[data-theme="dark"] .enquiry-content :is(input,select,textarea){background:#1d2024;color:var(--ink);border-color:#51565f}
+html[data-theme="dark"] .footer-name{color:#35393f}
+html[data-theme="dark"] .project-playground:before{background:radial-gradient(ellipse,#333a3280,transparent 65%)}
+html[data-theme="dark"] .button:hover{color:var(--ink);background:#343e29}
+html[data-theme="dark"] .hero-pill>span{color:#20211c}
+html[data-theme="dark"] :focus-visible{outline-color:#dbea9b}
